@@ -1,9 +1,27 @@
-# A customised WSL2 kernel. Download and try it out NOW!
+# ⚙️ Custom WSL2 Kernel – Supercharged for Android GUI!
+## 🚨 IMPORTANT: READ THIS FIRST
+- ### 🧑‍🤝‍🧑 Clone this repo:
 
-### **IMPORTANT INFO:**
+```bash
+git clone https://github.com/pro-grammer-SD/sounux.git
+```
+#### Set the kernel using the [`bzImage`](/dist/kernel/bzImage) file located in [`dist/kernel`](/dist/kernel/).
 
-- After setting of the kernel using the [`bzImage`](/dist/kernel/bzImage) file in [`dist/kernel`](/dist/kernel), do the following below:
-- Run necessary commands, such as `make modules_install` from the kernel source you get from [`git clone https://github.com/microsoft/WSL2-Linux-Kernel.git`](https://github.com/microsoft/WSL2-Linux-Kernel/).
-- Then run the [`launch-waydroid.sh`](/dist/scripts/launch-waydroid.sh) script in [`dist/scripts`](/dist/scripts).
-- You will probably need to seperately run `waydroid prop set persist.waydroid.multi_windows true` or else a black empty screen might show.
-- You might need to clone this repo first.
+- ### 🧩 Add Anbox Modules (Custom Fork)
+ #### 🤖 Clone and install my Anbox modules fork:
+
+```bash
+git clone --depth=1 https://github.com/pro-grammer-SD/anbox-modules.git
+cd anbox-modules
+./INSTALL.sh
+```
+- ### 🚀 Launch Waydroid
+#### Run the launcher:
+
+[`./dist/scripts/launch-waydroid.sh`](/dist/scripts/launch-waydroid.sh)
+#### If Waydroid shows a black screen, try:
+
+```bash
+waydroid prop set persist.waydroid.multi_windows true
+```
+# ✅ Done. Enjoy your GUI Android on WSL2.
