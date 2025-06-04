@@ -46,3 +46,10 @@ waydroid prop set persist.waydroid.multi_windows true
 ```
 
 # ✅ Done. Enjoy your GUI Android on WSL2.
+
+# Screenshots:
+## 1️⃣.
+![](/assets/images/img3.png)
+
+## 2️⃣.
+![](/assets/images/img4.png)
